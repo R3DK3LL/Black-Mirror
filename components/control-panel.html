@@ -1,0 +1,49 @@
+<div class="controls-container">
+    <div class="control-group">
+        <label class="control-label">
+            <input type="checkbox" id="flip-h" class="toggle-switch">
+            <span class="toggle-slider"></span>
+            <span class="control-text">Flip H</span>
+        </label>
+        
+        <label class="control-label">
+            <input type="checkbox" id="flip-v" class="toggle-switch">
+            <span class="toggle-slider"></span>
+            <span class="control-text">Flip V</span>
+        </label>
+        
+        <label class="control-label">
+            <input type="checkbox" id="invert" class="toggle-switch">
+            <span class="toggle-slider"></span>
+            <span class="control-text">Invert</span>
+        </label>
+    </div>
+    
+    <div class="control-group">
+        <div class="slider-control">
+            <label class="slider-label">Rotate</label>
+            <input type="range" id="rotate" min="0" max="270" step="90" value="0" class="control-slider">
+            <span class="slider-value" id="rotate-value">0°</span>
+        </div>
+        
+        <div class="slider-control">
+            <label class="slider-label">Speed</label>
+            <input type="range" id="speed" min="50" max="500" step="25" value="150" class="control-slider">
+            <span class="slider-value" id="speed-value">150ms</span>
+        </div>
+        
+        <div class="slider-control">
+            <label class="slider-label">Threshold</label>
+            <input type="range" id="sensitivity" min="0" max="255" step="5" value="128" class="control-slider">
+            <span class="slider-value" id="sensitivity-value">128</span>
+        </div>
+    </div>
+    
+    <div class="control-group">
+        <button id="reset" class="control-button">Reset</button>
+    </div>
+    
+    <div class="status-bar">
+        <span class="status-text">H:Flip H | V:Flip V | I:Invert | R:Rotate | Space:Pause</span>
+    </div>
+</div>
