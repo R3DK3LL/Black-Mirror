@@ -1,0 +1,40 @@
+.flap.black {
+   background: radial-gradient(circle, #1a0d26, #0d0013);
+   border: 1px solid #ff00ff;
+   box-shadow: 0 0 5px rgba(255, 0, 255, 0.3);
+}
+
+.flap.white {
+   background: radial-gradient(circle, #00ffff, #0080ff);
+   border: 1px solid #ffffff;
+   box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
+
+.flap {
+   border-radius: 0;
+}
+
+#flap-display {
+   background: radial-gradient(circle, #1a0d26, #000);
+   border-color: #ff00ff;
+}
+
+body {
+   background: linear-gradient(45deg, #1a0d26, #0d0013, #1a0d26);
+}
+
+#controls {
+   background: linear-gradient(90deg, #1a0d26, #0d0013, #1a0d26);
+   border-top-color: #ff00ff;
+}
+
+button, select, input {
+   border-color: #ff00ff;
+   color: #00ffff;
+}
+
+button:hover, select:hover {
+   background: linear-gradient(145deg, #ff00ff, #cc00cc);
+   color: #000;
+   box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+}

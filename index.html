@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Black Mirror</title>
-    <link rel="stylesheet" href="src/styles.css">
+   <meta charset="UTF-8">
+   <title>Black Mirror</title>
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="stylesheet" href="styles/airport.css" id="theme-css">
 </head>
 <body>
-    <div id="app">
-        <div id="flap-display"></div>
-        <div id="control-panel"></div>
-    </div>
-    <script src="src/app.js"></script>
+   <div id="app">
+       <div id="flap-display"></div>
+       <div id="controls">
+           <button id="start-btn">Start Mirror</button>
+           <select id="mode-select">
+               <option value="mirror">Mirror</option>
+               <option value="snake">Snake Game</option>
+                <option value="pacman">Pacman</option>
+           </select>
+           <select id="style-select">
+               <option value="airport">Airport</option>
+               <option value="large">Large Blocks</option>
+               <option value="minecraft">Minecraft</option>
+               <option value="retro">Retro</option>
+               <option value="bright">Bright</option>
+           </select>
+           <input type="range" id="size-slider" min="4" max="20" value="8">
+           <button id="screenshot-btn">Screenshot</button>
+           <button id="record-btn">Record</button>
+            <span id="game-score">Score: 0</span>
+       </div>
+   </div>
+   <video id="camera" autoplay playsinline style="display: none;"></video>
+   <canvas id="capture-canvas" style="display: none;"></canvas>
+   <script src="app.js"></script>
+   <script src="modes/mirror.js"></script>
+   <script src="modes/snake.js"></script>
+   <script src="modes/capture.js"></script>
+    <script src="modes/pacman.js"></script>
 </body>
 </html>

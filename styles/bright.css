@@ -1,0 +1,27 @@
+.flap.black {
+   background: linear-gradient(145deg, #ff4444, #cc0000);
+   border: 2px solid #ffff00;
+}
+
+.flap.white {
+   background: linear-gradient(145deg, #44ff44, #00cc00);
+   border: 2px solid #0080ff;
+}
+
+.flap {
+   border-radius: 4px;
+   box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+#flap-display {
+   background: linear-gradient(45deg, #ff4444, #44ff44, #4444ff, #ff4444);
+   background-size: 400% 400%;
+   animation: gradientShift 3s ease infinite;
+   border-color: #ffff00;
+}
+
+@keyframes gradientShift {
+   0% { background-position: 0% 50%; }
+   50% { background-position: 100% 50%; }
+   100% { background-position: 0% 50%; }
+}
