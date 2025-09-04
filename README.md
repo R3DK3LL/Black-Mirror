@@ -1,39 +1,37 @@
-# <span style="background: linear-gradient(90deg, #ff0080, #0080ff, #80ff00, #ff8000); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 60px; font-weight: bold; text-shadow: 0 0 20px #ff00ff;">BLACK MIRROR</span>
+# <div align="center"><img src="https://via.placeholder.com/600x150/4169E1/FFD700?text=BLACK+MIRROR" alt="BLACK MIRROR" style="background: linear-gradient(45deg, #4169E1, #8A2BE2); color: #FFD700; font-family: 'Impact', Arial Black; font-size: 48px; font-weight: 900; text-shadow: 4px 4px 0px #FF1493, 8px 8px 0px #00CED1, 12px 12px 0px #32CD32; letter-spacing: 4px; padding: 20px; border: 4px solid #FFD700; border-radius: 15px;"></div>
 
 <div align="center">
 
-![Status](https://img.shields.io/badge/STATUS-READY_TO_PLAY-00ff00?style=for-the-badge&labelColor=black&color=00ff00)
-![Platform](https://img.shields.io/badge/PLATFORM-BROWSER_POWERED-ff00ff?style=for-the-badge&labelColor=black&color=ff00ff)
-![License](https://img.shields.io/badge/LICENSE-MIT-ffff00?style=for-the-badge&labelColor=black&color=ffff00)
+![Status](https://img.shields.io/badge/STATUS-READY_TO_PLAY-00ff00?style=for-the-badge&labelColor=4169E1&color=FFD700)
+![Platform](https://img.shields.io/badge/PLATFORM-BROWSER_ONLY-ff00ff?style=for-the-badge&labelColor=8A2BE2&color=FF1493)
+![License](https://img.shields.io/badge/LICENSE-MIT-ffff00?style=for-the-badge&labelColor=32CD32&color=FFD700)
 
-<div style="background: linear-gradient(45deg, #ff00ff, #00ffff); color: #000; padding: 20px; border: 3px solid #ffff00; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 18px; font-weight: bold; margin: 20px 0;">
-CAMERA FEED BECOMES RETRO SPLIT-FLAP DISPLAY
-</div>
+### <span style="color: #FFD700; font-size: 20px; text-shadow: 2px 2px 0px #FF1493, 4px 4px 0px #00CED1;">CAMERA → SPLIT-FLAP → RETRO GAMES</span>
 
 </div>
 
 ---
 
-## <span style="color: #ff00ff; text-shadow: 0 0 10px #ff00ff; font-size: 24px;">▓▓▓</span> ARCADE MODES <span style="color: #ff00ff; text-shadow: 0 0 10px #ff00ff; font-size: 24px;">▓▓▓</span>
+## <span style="color: #FFD700; font-size: 28px; text-shadow: 3px 3px 0px #FF1493, 6px 6px 0px #8A2BE2; font-family: Impact;">GAME MODES</span>
 
 <table width="100%">
 <tr>
-<td width="33%" align="center" style="background: linear-gradient(135deg, #001122, #002244); border: 2px solid #00ffff; padding: 15px;">
+<td align="center" style="background: linear-gradient(45deg, #4169E1, #8A2BE2); padding: 20px; border: 3px solid #FFD700; border-radius: 10px;">
 
-### <span style="color: #00ffff; text-shadow: 0 0 10px #00ffff;">MIRROR</span>
-<span style="color: #ffffff; font-family: monospace;">Real-time camera reflection rendered as mechanical split-flap panels</span>
-
-</td>
-<td width="33%" align="center" style="background: linear-gradient(135deg, #112200, #224400); border: 2px solid #80ff00; padding: 15px;">
-
-### <span style="color: #80ff00; text-shadow: 0 0 10px #80ff00;">SNAKE</span>
-<span style="color: #ffffff; font-family: monospace;">Digital snake intelligently avoids dark areas where you appear</span>
+### <span style="color: #00CED1; font-size: 24px; text-shadow: 2px 2px 0px #FF1493; font-family: Impact;">MIRROR</span>
+<span style="color: #FFFFFF; font-family: Arial; font-size: 14px;">Real-time camera reflection as mechanical split-flap panels</span>
 
 </td>
-<td width="33%" align="center" style="background: linear-gradient(135deg, #220011, #440022); border: 2px solid #ff0080; padding: 15px;">
+<td align="center" style="background: linear-gradient(45deg, #FF1493, #8A2BE2); padding: 20px; border: 3px solid #00CED1; border-radius: 10px;">
 
-### <span style="color: #ff0080; text-shadow: 0 0 10px #ff0080;">DOT COLLECTOR</span>
-<span style="color: #ffffff; font-family: monospace;">Character collects dots in white space, avoids your silhouette</span>
+### <span style="color: #32CD32; font-size: 24px; text-shadow: 2px 2px 0px #FFD700; font-family: Impact;">SNAKE</span>
+<span style="color: #FFFFFF; font-family: Arial; font-size: 14px;">Snake avoids dark areas where you appear on camera</span>
+
+</td>
+<td align="center" style="background: linear-gradient(45deg, #32CD32, #FFD700); padding: 20px; border: 3px solid #FF1493; border-radius: 10px;">
+
+### <span style="color: #4169E1; font-size: 24px; text-shadow: 2px 2px 0px #FFFFFF; font-family: Impact;">DOT COLLECTOR</span>
+<span style="color: #000000; font-family: Arial; font-size: 14px;">Collects dots in white space, avoids your silhouette</span>
 
 </td>
 </tr>
@@ -41,67 +39,65 @@ CAMERA FEED BECOMES RETRO SPLIT-FLAP DISPLAY
 
 ---
 
-## <span style="color: #ffff00; text-shadow: 0 0 10px #ffff00; font-size: 24px;">▓▓▓</span> VISUAL STYLES <span style="color: #ffff00; text-shadow: 0 0 10px #ffff00; font-size: 24px;">▓▓▓</span>
+## <span style="color: #FF1493; font-size: 28px; text-shadow: 3px 3px 0px #00CED1, 6px 6px 0px #32CD32; font-family: Impact;">VISUAL STYLES</span>
 
-<div style="display: flex; justify-content: space-between;">
-
-<div style="background: linear-gradient(45deg, #333, #666); border: 2px solid #ffffff; padding: 10px; margin: 5px; text-align: center; width: 18%;">
-<span style="color: #ffffff; font-weight: bold;">AIRPORT</span><br>
-<span style="color: #cccccc; font-size: 12px;">Classic mechanical panels</span>
-</div>
-
-<div style="background: linear-gradient(45deg, #ff4444, #ff0000); border: 2px solid #ffff00; padding: 10px; margin: 5px; text-align: center; width: 18%;">
-<span style="color: #ffffff; font-weight: bold;">LARGE</span><br>
-<span style="color: #ffcccc; font-size: 12px;">Chunky pixel blocks</span>
-</div>
-
-<div style="background: linear-gradient(45deg, #4444ff, #0000ff); border: 2px solid #00ffff; padding: 10px; margin: 5px; text-align: center; width: 18%;">
-<span style="color: #ffffff; font-weight: bold;">MINECRAFT</span><br>
-<span style="color: #ccccff; font-size: 12px;">Cubic voxel style</span>
-</div>
-
-<div style="background: linear-gradient(45deg, #ff00ff, #8000ff); border: 2px solid #ff00ff; padding: 10px; margin: 5px; text-align: center; width: 18%;">
-<span style="color: #ffffff; font-weight: bold;">RETRO</span><br>
-<span style="color: #ffccff; font-size: 12px;">80s synthwave neon</span>
-</div>
-
-<div style="background: linear-gradient(45deg, #ff8000, #ffff00); border: 2px solid #ff0000; padding: 10px; margin: 5px; text-align: center; width: 18%;">
-<span style="color: #000000; font-weight: bold;">BRIGHT</span><br>
-<span style="color: #330000; font-size: 12px;">High contrast colors</span>
-</div>
-
+<div align="center">
+<table width="100%">
+<tr>
+<td align="center" style="background: linear-gradient(135deg, #333333, #666666); border: 3px solid #FFFFFF; padding: 15px; border-radius: 8px;">
+<span style="color: #FFFFFF; font-weight: bold; font-family: Impact; font-size: 18px;">AIRPORT</span><br>
+<span style="color: #CCCCCC; font-size: 12px;">Classic mechanical</span>
+</td>
+<td align="center" style="background: linear-gradient(135deg, #FF4444, #CC0000); border: 3px solid #FFD700; padding: 15px; border-radius: 8px;">
+<span style="color: #FFFFFF; font-weight: bold; font-family: Impact; font-size: 18px;">LARGE</span><br>
+<span style="color: #FFCCCC; font-size: 12px;">Chunky blocks</span>
+</td>
+<td align="center" style="background: linear-gradient(135deg, #4444FF, #0000CC); border: 3px solid #00CED1; padding: 15px; border-radius: 8px;">
+<span style="color: #FFFFFF; font-weight: bold; font-family: Impact; font-size: 18px;">MINECRAFT</span><br>
+<span style="color: #CCCCFF; font-size: 12px;">Cubic voxels</span>
+</td>
+<td align="center" style="background: linear-gradient(135deg, #FF00FF, #8A2BE2); border: 3px solid #FF1493; padding: 15px; border-radius: 8px;">
+<span style="color: #FFFFFF; font-weight: bold; font-family: Impact; font-size: 18px;">RETRO</span><br>
+<span style="color: #FFCCFF; font-size: 12px;">80s synthwave</span>
+</td>
+<td align="center" style="background: linear-gradient(135deg, #FF8000, #FFFF00); border: 3px solid #FF0000; padding: 15px; border-radius: 8px;">
+<span style="color: #000000; font-weight: bold; font-family: Impact; font-size: 18px;">BRIGHT</span><br>
+<span style="color: #330000; font-size: 12px;">High contrast</span>
+</td>
+</tr>
+</table>
 </div>
 
 ---
 
-## <span style="color: #00ff00; text-shadow: 0 0 10px #00ff00; font-size: 24px;">▓▓▓</span> CONTROL PANEL <span style="color: #00ff00; text-shadow: 0 0 10px #00ff00; font-size: 24px;">▓▓▓</span>
+## <span style="color: #32CD32; font-size: 28px; text-shadow: 3px 3px 0px #FFD700, 6px 6px 0px #FF1493; font-family: Impact;">CONTROLS</span>
 
-<div style="background: linear-gradient(90deg, #1a1a1a, #2a2a2a, #1a1a1a); border: 3px solid #00ff00; padding: 20px; font-family: 'Courier New', monospace;">
+<div style="background: linear-gradient(90deg, #000033, #000066, #000033); border: 4px solid #00CED1; padding: 25px; border-radius: 15px;">
 
-<table width="100%">
+<table width="100%" style="color: #FFFFFF; font-family: 'Courier New', monospace; font-size: 16px;">
 <tr>
-<td style="color: #00ffff; font-weight: bold; padding: 10px;">START MIRROR</td>
-<td style="color: #cccccc;">Begin camera capture and display</td>
+<td style="color: #FFD700; font-weight: bold; padding: 8px; text-shadow: 1px 1px 0px #000000;">START MIRROR</td>
+<td style="color: #FFFFFF;">Begin camera capture</td>
 </tr>
 <tr>
-<td style="color: #ff00ff; font-weight: bold; padding: 10px;">MODE SELECT</td>
-<td style="color: #cccccc;">Switch between Mirror/Snake/Dot Collector</td>
+<td style="color: #FF1493; font-weight: bold; padding: 8px; text-shadow: 1px 1px 0px #000000;">MODE SELECT</td>
+<td style="color: #FFFFFF;">Switch between game modes</td>
 </tr>
 <tr>
-<td style="color: #ffff00; font-weight: bold; padding: 10px;">STYLE SELECT</td>
-<td style="color: #cccccc;">Change visual theme and appearance</td>
+<td style="color: #00CED1; font-weight: bold; padding: 8px; text-shadow: 1px 1px 0px #000000;">STYLE SELECT</td>
+<td style="color: #FFFFFF;">Change visual theme</td>
 </tr>
 <tr>
-<td style="color: #80ff00; font-weight: bold; padding: 10px;">SIZE SLIDER</td>
-<td style="color: #cccccc;">Adjust individual panel size</td>
+<td style="color: #32CD32; font-weight: bold; padding: 8px; text-shadow: 1px 1px 0px #000000;">SIZE SLIDER</td>
+<td style="color: #FFFFFF;">Adjust panel size</td>
 </tr>
 <tr>
-<td style="color: #ff8000; font-weight: bold; padding: 10px;">SCREENSHOT</td>
-<td style="color: #cccccc;">Save current display as image</td>
+<td style="color: #FF8000; font-weight: bold; padding: 8px; text-shadow: 1px 1px 0px #000000;">SCREENSHOT</td>
+<td style="color: #FFFFFF;">Save current frame</td>
 </tr>
 <tr>
-<td style="color: #ff0080; font-weight: bold; padding: 10px;">RECORD</td>
-<td style="color: #cccccc;">Capture video of gameplay</td>
+<td style="color: #8A2BE2; font-weight: bold; padding: 8px; text-shadow: 1px 1px 0px #000000;">RECORD</td>
+<td style="color: #FFFFFF;">Capture video</td>
 </tr>
 </table>
 
@@ -109,20 +105,25 @@ CAMERA FEED BECOMES RETRO SPLIT-FLAP DISPLAY
 
 ---
 
-## <span style="color: #ff0080; text-shadow: 0 0 10px #ff0080; font-size: 24px;">▓▓▓</span> STARTUP SEQUENCE <span style="color: #ff0080; text-shadow: 0 0 10px #ff0080; font-size: 24px;">▓▓▓</span>
+## <span style="color: #00CED1; font-size: 28px; text-shadow: 3px 3px 0px #8A2BE2, 6px 6px 0px #FFD700; font-family: Impact;">QUICK START</span>
 
-<div style="background: linear-gradient(135deg, #000033, #000066); border: 2px solid #0080ff; padding: 25px; font-family: 'Courier New', monospace; font-size: 16px; color: #ffffff;">
+<div style="background: linear-gradient(45deg, #4169E1, #8A2BE2, #FF1493); padding: 30px; border: 4px solid #FFD700; border-radius: 15px; text-align: center;">
 
-<div style="color: #00ffff; font-weight: bold; margin-bottom: 10px;">STEP 01: OPEN index.html IN BROWSER</div>
-<div style="color: #80ff00; font-weight: bold; margin-bottom: 10px;">STEP 02: ALLOW CAMERA ACCESS</div>
-<div style="color: #ffff00; font-weight: bold; margin-bottom: 10px;">STEP 03: SELECT MODE AND STYLE</div>
-<div style="color: #ff8000; font-weight: bold; margin-bottom: 10px;">STEP 04: ADJUST SIZE SETTINGS</div>
-<div style="color: #ff00ff; font-weight: bold; text-align: center; margin-top: 15px;">SYSTEM READY - GAME START</div>
+<div style="color: #FFFFFF; font-family: 'Courier New', monospace; font-size: 18px; font-weight: bold;">
+<div style="margin: 10px 0; text-shadow: 2px 2px 0px #000000;">1. OPEN index.html IN BROWSER</div>
+<div style="margin: 10px 0; text-shadow: 2px 2px 0px #000000;">2. ALLOW CAMERA ACCESS</div>
+<div style="margin: 10px 0; text-shadow: 2px 2px 0px #000000;">3. SELECT MODE AND STYLE</div>
+<div style="margin: 10px 0; text-shadow: 2px 2px 0px #000000;">4. START PLAYING</div>
+</div>
+
+<div style="background: #FFD700; color: #000000; padding: 15px; margin-top: 20px; border-radius: 10px; font-family: Impact; font-size: 20px; text-shadow: none;">
+NO INSTALLATION • NO DEPENDENCIES • BROWSER ONLY
+</div>
 
 </div>
 
 ---
 
-<div align="center" style="background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff); color: #000; padding: 15px; font-family: 'Courier New', monospace; font-weight: bold; font-size: 14px; border-radius: 10px; margin-top: 30px;">
-NO INSTALLATION • NO DEPENDENCIES • BROWSER ONLY • MIT LICENSE
+<div align="center" style="background: linear-gradient(90deg, #FF1493, #00CED1, #32CD32, #FFD700); padding: 20px; border-radius: 15px; margin-top: 30px;">
+<span style="color: #000000; font-family: Impact; font-size: 18px; font-weight: bold; text-shadow: 1px 1px 0px #FFFFFF;">MIT LICENSE • RETRO GAMING EXPERIENCE • 2024</span>
 </div>
