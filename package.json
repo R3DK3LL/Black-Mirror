@@ -1,0 +1,20 @@
+{
+  "name": "black_mirror",
+  "version": "1.0.0",
+  "description": "Real-time camera mirror with split-flap display rendering and interactive game modes.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R3DK3LL/Black-Mirror.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R3DK3LL/Black-Mirror/issues"
+  },
+  "homepage": "https://github.com/R3DK3LL/Black-Mirror#readme"
+}
