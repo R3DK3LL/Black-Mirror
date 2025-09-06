@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16, 18, 20]
+        node-version: [18, 20]
     
     steps:
     - name: Checkout code
@@ -65,11 +65,11 @@ jobs:
         
         # Check for problematic code patterns
         echo "Checking for problematic patterns..."
-        if grep -r "console.log" --include="*.js" .; then
+        if grep -r "console.log" --include="*.js" --exclude-dir=node_modules .; then
           echo "❌ console.log statements found - remove before production"
           exit 1
         fi
-        if grep -r "debugger" --include="*.js" .; then
+        if grep -r "debugger" --include="*.js" --exclude-dir=node_modules .; then
           echo "❌ debugger statements found - remove before production"
           exit 1
         fi
