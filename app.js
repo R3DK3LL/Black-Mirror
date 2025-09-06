@@ -42,7 +42,7 @@ class BlackMirror {
            this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
            this.generateFlipSound();
        } catch (e) {
-           console.log('Audio not available');
+           console.warn('Audio not available');
        }
    }
    
