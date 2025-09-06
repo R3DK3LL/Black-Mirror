@@ -69,7 +69,7 @@ jobs:
           echo "❌ console.log statements found - remove before production"
           exit 1
         fi
-        if grep -r "debugger" --include="*.js" --exclude-dir=node_modules .; then
+        if grep -r "debugger" --include="*.js" --exclude-dir=node_modules . | grep -v "eslint.config.js"; then
           echo "❌ debugger statements found - remove before production"
           exit 1
         fi
