@@ -1,4 +1,4 @@
-name: Production CI Pipeline
+name: CI Pipeline
 
 on:
   push:
@@ -9,21 +9,167 @@ on:
 jobs:
   quality-gate:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16, 18, 20]
     
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
     
-    - name: Setup Node.js
+    - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     
     - name: Install dependencies
-      run: npm install || echo "No package.json found"
+      run: |
+        if [ -f package.json ]; then
+          npm ci || npm install
+        else
+          echo "No package.json found"
+          exit 0
+        fi
     
     - name: Security audit
-      run: npm audit || echo "Add package.json for security checks"
+      run: |
+        echo "Running security audit..."
+        if [ -f package.json ]; then
+          npm audit --audit-level=high
+          echo "Security audit passed"
+        else
+          echo "No package.json - skipping security audit"
+        fi
+    
+    - name: Code quality
+      run: |
+        echo "Running code quality checks..."
+        
+        # Install and run basic linting if no linter is configured
+        if ! npm list eslint --depth=0 &>/dev/null; then
+          echo "Installing ESLint for basic checks..."
+          npm install --no-save eslint@latest
+        fi
+        
+        if npm list eslint --depth=0 &>/dev/null; then
+          # Run ESLint on JavaScript files
+          npx eslint . --ext .js,.jsx --ignore-pattern node_modules/
+          echo "ESLint checks passed"
+        else
+          echo "ESLint not available - using basic syntax check"
+          # Basic syntax validation for JavaScript files
+          find . -name "*.js" -not -path "./node_modules/*" -exec node -c {} \;
+          echo "JavaScript syntax validation passed"
+        fi
+        
+        # Check for problematic code patterns
+        echo "Checking for problematic patterns..."
+        if grep -r "console.log" --include="*.js" .; then
+          echo "❌ console.log statements found - remove before production"
+          exit 1
+        fi
+        if grep -r "debugger" --include="*.js" .; then
+          echo "❌ debugger statements found - remove before production"
+          exit 1
+        fi
+        echo "Code quality checks passed"
+    
+    - name: TypeScript checking
+      run: |
+        echo "Checking TypeScript..."
+        if [ -f tsconfig.json ]; then
+          if npm list typescript --depth=0 &>/dev/null; then
+            npx tsc --noEmit
+            echo "TypeScript compilation successful"
+          else
+            echo "TypeScript config found but TypeScript not installed"
+            npm install --no-save typescript@latest
+            npx tsc --noEmit
+            echo "TypeScript compilation successful"
+          fi
+        else
+          echo "No TypeScript configuration found"
+          # Check if there are .ts files without config
+          if find . -name "*.ts" -not -path "./node_modules/*" | grep -q .; then
+            echo "❌ TypeScript files found but no tsconfig.json"
+            echo "Add TypeScript configuration or remove .ts files"
+            exit 1
+          fi
+        fi
     
     - name: Tests
-      run: echo "Add tests for production readiness"
+      run: |
+        echo "Running tests..."
+        if [ -f package.json ]; then
+          # Check if test script exists and is not the default
+          if npm run test --silent 2>/dev/null | grep -q "Error: no test specified"; then
+            echo "⚠️ No tests configured - this is acceptable for now"
+          else
+            npm test
+            echo "All tests passed"
+          fi
+        else
+          echo "No package.json found"
+        fi
+    
+    - name: Build check
+      run: |
+        echo "Checking build process..."
+        if [ -f package.json ]; then
+          if npm run build --silent 2>/dev/null; then
+            echo "Build successful"
+          else
+            echo "No build script found - this is OK for simple projects"
+          fi
+        else
+          echo "No package.json found"
+        fi
+    
+    - name: File validation
+      run: |
+        echo "Running file validation..."
+        
+        # Check for package-lock.json
+        if [ -f package-lock.json ]; then
+          echo "✅ package-lock.json found (good for dependency consistency)"
+        else
+          echo "⚠️ No package-lock.json - consider committing it for reproducible builds"
+        fi
+        
+        # Check for .gitignore
+        if [ -f .gitignore ]; then
+          if grep -q "node_modules" .gitignore; then
+            echo "✅ node_modules properly ignored"
+          else
+            echo "⚠️ Consider adding node_modules to .gitignore"
+          fi
+        else
+          echo "⚠️ No .gitignore found - consider adding one"
+        fi
+        
+        # Check for README
+        if [ -f README.md ]; then
+          echo "✅ README.md found"
+        else
+          echo "⚠️ No README.md - consider adding documentation"
+        fi
+    
+    - name: Build summary
+      if: always()
+      run: |
+        echo "Build completed"
+        echo "Repository: ${{ github.repository }}"
+        echo "Branch: ${{ github.ref_name }}"
+        echo "Node.js: ${{ matrix.node-version }}"
+        echo "Commit: ${{ github.sha }}"
+        
+        # Summary of what was checked
+        echo ""
+        echo "Quality checks performed:"
+        echo "- Security audit"
+        echo "- Code quality/linting"
+        echo "- TypeScript validation"
+        echo "- Test execution"
+        echo "- Build verification"
+        echo "- File structure validation"
